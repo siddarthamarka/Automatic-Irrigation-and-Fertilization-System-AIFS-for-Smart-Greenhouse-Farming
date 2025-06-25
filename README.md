@@ -45,6 +45,39 @@ Actuators: Automated valves and pumps to manage water and nutrient flow.
 🛰️ Satellite Integration for climate-aware irrigation scheduling.
 🌐 Integration with Smart City Farming Networks for fully connected agricultural ecosystems.
 
+# Project Structure: 
+Greenhouse_IoT_Complete/
+├── frontend/                        # 🌐 React Web App (from canvas)
+│   ├── public/
+│   ├── src/
+│   │   ├── index.js
+│   │   ├── index.css
+│   │   ├── App.js
+│   │   ├── pages/
+│   │   │   ├── Register.js
+│   │   │   ├── Home.js
+│   │   │   ├── Run.js
+│   │   │   ├── Report.js
+│   │   │   └── Profile.js
+│   │   ├── components/
+│   │   │   └── BarChartComponent.js
+│   │   └── services/
+│   │       └── api.js
+│   └── package.json
+│
+├── backend/                         # 🐍 Flask API
+│   ├── app.py
+│   └── requirements.txt
+│
+├── mqtt/                            # 📡 MQTT Subscriber Logger
+│   └── server.py
+│
+├── firmware/                        # 🔌 ESP32 Firmware (Arduino)
+│   └── main.ino
+│
+└── README.md                        # 📘 Project Overview & Setup Guide
+
+
 📌 Conclusion:
 
 The AIFS project provides a robust and intelligent solution for smart greenhouse farming. By combining IoT sensors, automated control, and efficient data communication, it ensures sustainable farming practices, optimized resource use, and increased agricultural productivity. The system demonstrates the potential of technology-driven solutions in transforming modern agriculture.
