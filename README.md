@@ -46,36 +46,25 @@ Actuators: Automated valves and pumps to manage water and nutrient flow.
 🌐 Integration with Smart City Farming Networks for fully connected agricultural ecosystems.
 
 # Project Structure: 
-Greenhouse_IoT_Complete/
-├── frontend/                        # 🌐 React Web App (from canvas)
-│   ├── public/
-│   ├── src/
-│   │   ├── index.js
-│   │   ├── index.css
-│   │   ├── App.js
-│   │   ├── pages/
-│   │   │   ├── Register.js
-│   │   │   ├── Home.js
-│   │   │   ├── Run.js
-│   │   │   ├── Report.js
-│   │   │   └── Profile.js
-│   │   ├── components/
-│   │   │   └── BarChartComponent.js
-│   │   └── services/
-│   │       └── api.js
-│   └── package.json
-│
-├── backend/                         # 🐍 Flask API
-│   ├── app.py
-│   └── requirements.txt
-│
-├── mqtt/                            # 📡 MQTT Subscriber Logger
-│   └── server.py
-│
-├── firmware/                        # 🔌 ESP32 Firmware (Arduino)
-│   └── main.ino
-│
-└── README.md                        # 📘 Project Overview & Setup Guide
+| Folder / File                               | Description                                  |
+|--------------------------------------------|----------------------------------------------|
+|  Greenhouse_IoT/                            | Root project directory                        |
+| `frontend/`                                 | 🌐 React frontend web application             |
+| ├── `src/index.js`                          | Main React entry point                        |
+| ├── `src/index.css`                         | Global styles                                 |
+| ├── `src/App.js`                            | Root component and routing                    |
+| ├── `src/pages/Register.js`                 | User registration page                        |
+| ├── `src/pages/Home.js`                     | Dashboard/home screen                         |
+| ├── `src/pages/Run.js`                      | Control and monitoring interface              |
+| ├── `src/pages/Report.js`                   | Historical data & analytics reports           |
+| ├── `src/pages/Profile.js`                  | User profile page                             |
+| ├── `src/components/BarChartComponent.js`   | Reusable bar chart component                  |
+| ├── `src/services/api.js`                   | Axios or fetch API wrapper                    |
+| └── `package.json`                          | Node dependencies and project metadata        |
+| `backend/app.py`                            | 🐍 Flask API for handling frontend requests    |
+| `backend/requirements.txt`                  | Flask dependencies                            |
+| `mqtt/server.py`                            | 📡 MQTT subscriber/logger for sensor data     |
+| `firmware/main.ino`                         | 🔌 ESP32 firmware code (Arduino IDE format)   |
 
 
 📌 Conclusion:
